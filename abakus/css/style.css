@@ -1,0 +1,16 @@
+:root {
+    --site-font: 'Roboto', sans-serif;
+}
+body {
+    font-family: var(--site-font);
+    background-color: #edf0f2;
+}
+
+.infoPanel .title {
+    color: #939395;
+}
+
+.infoPanel .value {
+    color: #29292A;
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Finansal Hesap Makinası</title>
+
+    <!-- Shortcut Icon  -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <!-- SmtpJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- AlpineJS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="py-2 mb-3 bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.zafercelenk.com/" class="pt-2">Siteye dön</a>
+                </div>
+                <div class="col-4 text-center">
+                    <h5>-- ABAKÜS --</h5>
+                </div>
+                <div class="col-4 text-end">
+                    <a href="https://github.com/zafer06/abakus">Github</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hesapla">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" x-data="depositModule()">
+                        <div class="card-body">
+                            <h5 class="card-title">Mevduat Faizi Hesapla</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Basit bir şekilde mevduat faiz gelirinizi öğrenebilirsiniz.</h6>
+                            <div class="row mt-4">
+                                <div class="col-4">
+                                    <form @submit.prevent="calculate()">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label for="amount" class="form-label">Hesaplanacak Tutar</label>
+                                                    <input type="text" class="form-control" x-model="formData.amount" tabindex="1">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="expiry" class="form-label">Vade Süresi</label>
+                                                    <input type="text" class="form-control" x-model="formData.expiry" tabindex="3">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="expiry" class="form-label">Boşta Kalan Tutar</label>
+                                                    <input type="text" class="form-control" tabindex="5" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label for="rate" class="form-label">Mevduat Oranı</label>
+                                                    <input type="text" class="form-control" x-model="formData.rate" tabindex="2">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="expiry" class="form-label">Stopaj Oranı</label>
+                                                    <select class="form-select" x-model="formData.tax" tabindex="4">
+                                                        <option value="5">%5</option>
+                                                        <option value="10">%10</option>
+                                                        <option value="15">%15</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">&nbsp;</label>
+                                                    <button class="form-control btn btn-primary">Hesapla</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-8 infoPanel">
+                                    <div class="row text-center mb-4">
+                                        <div class="col-4">
+                                            <div class="title">Brüt Tutar</div>
+                                            <div class="value"><span x-text="resultData.grossAmount"></span> TL</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="title">Stopaj Tutarı</div>
+                                            <div class="value"><span x-text="resultData.tax"></span> TL</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="title">Net Tutar</div>
+                                            <div class="value"><span x-text="resultData.netAmount"></span> TL</div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center mb-4">
+                                        <div class="col-4">
+                                            <div class="title">Başlama Tarihi</div>
+                                            <div class="value"><span x-text="resultData.beginDate"></span></div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="title">Bitiş Tarihi</div>
+                                            <div class="value"><span x-text="resultData.endDate"></span></div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="title">Süre</div>
+                                            <div class="value"><span x-text="resultData.diffDays"></span> Gün</div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col-4">
+                                            <div class="title">Hesaplanan Tutar</div>
+                                            <div class="value"><span x-text="resultData.amount"></span> TL</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="title">Genel Toplam</div>
+                                            <div class="value"><span x-text="resultData.grandTotal"></span> TL</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
