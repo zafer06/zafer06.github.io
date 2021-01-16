@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/</link>
+    <description>Recent content on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Sun, 20 Dec 2020 18:08:04 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash Komutlari: dig</title>
+      <link>https://www.zafercelenk.com/posts/bash-komutlari-dig/</link>
+      <pubDate>Sun, 20 Dec 2020 18:08:04 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/bash-komutlari-dig/</guid>
+      <description>Linux üzerinde çalışıyorsanız Linux&amp;rsquo;un beraberinde getirdiği bir çok faydalı terminal komutu ile işlerinizi daha hızlı ve pratik bir şekilde halletmeniz mümkün. Bu güzel komutlardan biriside dig komutudur.
+Bir terminal komutu olan dig ile alan adları üzerinde bazı sorgular yaparak bilgiler edinebilirsiniz. Pek tabi ki bu iş için bir çok araç ve web sitesindende yardım alabilirsiniz. Ancak Linux terminalde yerleşik olarak gelen dig komutu çok daha pratik ve hızlı bir şekilde sorunuzu çözmenize yardım edebilir.</description>
+    </item>
+    
+    <item>
+      <title>Beego ve Cross Site Request Forgery (CSRF)</title>
+      <link>https://www.zafercelenk.com/posts/csrf-guvenlik/</link>
+      <pubDate>Sat, 09 May 2020 18:00:58 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/csrf-guvenlik/</guid>
+      <description>Cross Site Request Forgery kısaca CSRF türkçeye &amp;ldquo;Siteler Arası İstek Sahtekârlığı&amp;rdquo; şeklinde çevrilebilir. CSRF web geliştiricilerinin sürekli karşı karşıya kaldıkları bir durumdur. Web uygulamasının görevi kendisine gelen isteklere belirli kurallar çerçevesinde cevap vermektir. Burada sorun şudur ki; web uygulaması kendisine gelen isteğin esas sahibinin kim olduğunu bilmez. Örneğin http://www.zafercelenk.com adresinde bulunan bir iletişim formu üzerinden mesaj gönderdiğimizi düşünelim. Bu form bilgilerini gerçekten bu adresi açmış olan bir tarayıcı üzerinden gönderebileceğimiz gibi kendi yazdığımız bir uygulama üzerindende gönderebiliriz.</description>
+    </item>
+    
+    <item>
+      <title>Go dilinde eşleme tabloları</title>
+      <link>https://www.zafercelenk.com/posts/go-dilinde-esleme-tablolari/</link>
+      <pubDate>Sat, 16 Feb 2019 23:00:00 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/go-dilinde-esleme-tablolari/</guid>
+      <description>Go dilinde diğer pek çok dilde olduğu gibi eşleme tablosu diye adlandırabileceğimiz map veri tipi vardır. Yazılım dillerinde bulunan genel veri yapılarından birisi dizilerdir. Diziler aynı türde bir çok veriyi bir arada ve sıralı bir şekilde yönetebilmemizi sağlayan bir topluluk veri tipidir. Go dilindeki map olanağı ise dizinin tamsayı indis kısıtlamasını kaldırarak daha esnek yapılar oluşturmamızı sağlar.
+Bununla birlikte dizi indisleri ancak bir tamsayı olabilmektedir. Örneğin haftanın günlerini bir dizi ile temsil etmek güzel bir çözümdür.</description>
+    </item>
+    
+    <item>
+      <title>Refactoring Nedir?</title>
+      <link>https://www.zafercelenk.com/posts/refactoring-nedir/</link>
+      <pubDate>Sat, 02 Feb 2019 20:21:47 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/refactoring-nedir/</guid>
+      <description>&lt;p&gt;Yazılım geliştiriciler olarak bazen eski yazdığımız kodlara bakarak bunları daha iyi yazabileceğimizi görürürüz. Bazen ise başka geliştiricilerin yazdıkları kodları inceler ve bu kodların daha iyi yazılabileceğini düşünürüz. Yazılan bu kodlar o an için en iyi çözüm gibi görünse de sonrasında daha iyi çözümler olduğunu görürüz. Böyle durumlarda eski kodu daha iyi hale getirmek için yapılan yeniden düzenleme işlemine refactoring denir.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tek IP Üzerinden SSL Kullanımı</title>
+      <link>https://www.zafercelenk.com/posts/tek-ip-uzerinden-ssl-kullanimi/</link>
+      <pubDate>Fri, 28 Dec 2018 22:55:58 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/tek-ip-uzerinden-ssl-kullanimi/</guid>
+      <description>&lt;p&gt;SSL (Secure Socket Layer) teknolojisi sayesinde sunucu ile istemci arasında düz metin olarak gidip gelen veri şifrelenerek güvenli bir şekilde aktarılmaya başladı.&lt;/p&gt;
+&lt;p&gt;Bugün kullandığımız internet sitelerinin dolayısıyla www&amp;rsquo;nin temelinde iki önemli unsur bulunur. Bunlardan birincisi içeriği sağlayan sunucu bir diğeri ile içeriği talep eden istemci. Tüm web sistemi bu iki olgu üzerine kurulmuştur.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Go dilinde değişken ve veri türleri</title>
+      <link>https://www.zafercelenk.com/posts/go-degisken-veri-turleri/</link>
+      <pubDate>Mon, 05 Nov 2018 21:50:42 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/go-degisken-veri-turleri/</guid>
+      <description>&lt;p&gt;Veri türleri programlama dilinin en temel olanaklarıdır. Biz programcılar uygulamalarımızı geliştirirken sürekli olarak veri ile iç içe çalışırız. Ancak veri tek başına anlamlı değildir. Ancak yanında onu niteleyen bir özellikle anlamlı hale gelir. Bu süreçte verinin bilgisayar tarafından doğru anlamlandırılmasını sağlamak içinde veri türlerini kullanırız.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hakkımda</title>
+      <link>https://www.zafercelenk.com/about/</link>
+      <pubDate>Sat, 20 Oct 2018 21:37:58 +0530</pubDate>
+      
+      <guid>https://www.zafercelenk.com/about/</guid>
+      <description>Bilgisayar ve özelinde yazılım geliştirme sevdalısı birisiyim. Nano Medya şirketinde yazılım geliştirici olarak çalışan bir bilgisyar programcısıyım. Yaklaşık 12+ yıllık çalışma süreci boyunca bir çok proje geliştirdim. Bu süreçte Delphi, C#, ASP.NET, Java, Javascript, PHP, Python, D ve Go gibi bir çok dilde ve farklı projelerde çalışma imkanım oldu. Bu diller haricinde veritabanları ve sunucu yönetimi konusunda da tecrübeler edindim.
+Tüm bu tecrübe ve bilgi birikimimle beraber şu sıralar Go dili ile bir NanoShop E-Ticaret projesi geliştiriyorum.</description>
+    </item>
+    
+    <item>
+      <title>Linux çoklu masaüstü kullanımı</title>
+      <link>https://www.zafercelenk.com/posts/linux-coklu-masaustu-kullanimi/</link>
+      <pubDate>Sat, 20 Oct 2018 10:47:36 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/linux-coklu-masaustu-kullanimi/</guid>
+      <description>Linux işletim sistemi kullanıyor musunuz? Peki daha önce Linux veya OS X işletim sistemleri ile bir deneyiminiz oldu mu? Eğer bu sorulara evet diyorsanız o zaman çoklu masaüstü ile tanışmış olmalısınız. Son sürümle beraber Windows 10 işletim sistemi de bu beceriye kavuşmuştur. Ben bu yazımda bir Linux kullanıcısı olarak, çoklu masaüstünün Linux tarafındaki kullanımından söz edeceğim.
+Linux masaüstü ortamları ilk ortaya çıktığı günden bu yana çoklu masaüstü özelliğini kullanıcılarına sunmaktadır. Linux ortamında mevcut masaüstünüzün birden çok kopyasını oluşturabilirsiniz.</description>
+    </item>
+    
+    <item>
+      <title>Kamu Açık Kaynak Konferansı 2018</title>
+      <link>https://www.zafercelenk.com/posts/kamu-acik-kaynak-konferansi-2018/</link>
+      <pubDate>Wed, 17 Oct 2018 07:55:30 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/kamu-acik-kaynak-konferansi-2018/</guid>
+      <description>Son bir kaç yıldır Tubitak ve Ulakbim desteği ile yapılan Kamu Açık Kaynak Konferansı bu sene 24 Ekim 2018 tarihinde Ankara Sheraton Hotelde düzenlenecek. Konferansta önceki yıllarda olduğu gibi Pardus projesi, açık kaynak dünyasındaki gelişmeler ve çözümler, kamu açık kaynak kullanım ve uyarlama öyküleri, ülkemizde yürütülen faaliyetler, kamu kaynaklarının etkin ve verimli kullanımı ve benzeri konular, seminerler ve çalıştaylar eşliğinde ele alınacak.
+Açık kaynak dünyası ve kamunun bir araya geldiği bu etkinlik hem bu konulara ilgi duyan hemde açık kaynak dünyasındaki gelişmeleri takip etmek isteyen katılımcılar için iyi bir fırsat.</description>
+    </item>
+    
+    <item>
+      <title>Merhaba Dünya</title>
+      <link>https://www.zafercelenk.com/posts/merhaba-dunya/</link>
+      <pubDate>Mon, 15 Oct 2018 09:43:43 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/merhaba-dunya/</guid>
+      <description>Merhaba, bir yazılımcı olarak yazılım geliştirirken yaşadığım sorunların çözümlerini ve ileride ihtiyacım olacak konuları toplu olarak bir yerde bulundurmak adına böyle bir günlük oluşturdum.
+Öncelikli amacım kendime notlar ve öğrendiklerimi okumak isteyenlerle paylaşmak. Bu sayfalarda yazılım geliştirme temelli olarak bu alana ait yazıların yanısıra özellike Go dili ve beego framework ile web yazılımları konusunda yazılar bulabilirsiniz.</description>
+    </item>
+    
+  </channel>
+</rss>

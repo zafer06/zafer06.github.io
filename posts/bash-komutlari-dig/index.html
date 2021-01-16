@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Bash Komutlari: dig - Zafer Günlükleri</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Bash Komutlari: dig">
+<meta itemprop="description" content="Linux üzerinde çalışıyorsanız Linux&#39;un beraberinde getirdiği bir çok faydalı terminal komutu ile işlerinizi daha hızlı ve pratik bir şekilde halletmeniz mümkün.">
+<meta itemprop="datePublished" content="2020-12-20T18:08:04+03:00" />
+<meta itemprop="dateModified" content="2020-12-20T18:08:04+03:00" />
+<meta itemprop="wordCount" content="881">
+
+
+
+<meta itemprop="keywords" content="dig," />
+<meta property="og:title" content="Bash Komutlari: dig" />
+<meta property="og:description" content="Linux üzerinde çalışıyorsanız Linux&#39;un beraberinde getirdiği bir çok faydalı terminal komutu ile işlerinizi daha hızlı ve pratik bir şekilde halletmeniz mümkün." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.zafercelenk.com/posts/bash-komutlari-dig/" />
+<meta property="article:published_time" content="2020-12-20T18:08:04+03:00" />
+<meta property="article:modified_time" content="2020-12-20T18:08:04+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bash Komutlari: dig"/>
+<meta name="twitter:description" content="Linux üzerinde çalışıyorsanız Linux&#39;un beraberinde getirdiği bir çok faydalı terminal komutu ile işlerinizi daha hızlı ve pratik bir şekilde halletmeniz mümkün."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.zafercelenk.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.zafercelenk.com/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://www.zafercelenk.com/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://www.zafercelenk.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://www.zafercelenk.com/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Zafer Günlükleri" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://www.zafercelenk.com/">Zafer Günlükleri</a></h1>
+	<div class="site-description"><p style="color: gray">Bir programcının hayat ve yazılım üzerine notları</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/zafer06" title="Github"><i data-feather="github"></i></a></li><li><a href="https://www.linkedin.com/in/zafer-celenk" title="Linkedin"><i data-feather="linkedin"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav><span class="scheme-toggle"><a href="#" id="scheme-toggle"></a></div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Blog</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Tüm Yazılar</a>
+			</li>
+			
+			<li>
+				<a href="/about">Hakkımda</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Etiketler</a>
+			</li>
+			
+			<li style="float:right;margin:0">
+				<a href="/abakus">Abaküs</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">20</span>
+							<span class="rest">Ara 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Bash Komutlari: dig</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Linux üzerinde çalışıyorsanız Linux&rsquo;un beraberinde getirdiği bir çok faydalı terminal komutu ile işlerinizi daha hızlı ve pratik bir şekilde halletmeniz mümkün. Bu güzel komutlardan biriside <strong>dig</strong> komutudur.</p>
+<p>Bir terminal komutu olan <strong>dig</strong> ile alan adları üzerinde bazı sorgular yaparak bilgiler edinebilirsiniz. Pek tabi ki bu iş için bir çok araç ve web sitesindende yardım alabilirsiniz. Ancak Linux terminalde yerleşik olarak gelen <strong>dig</strong> komutu çok daha pratik ve hızlı bir şekilde sorunuzu çözmenize yardım edebilir.</p>
+<p>Alan adınız hakkında bilgi almak için <strong>dig</strong> komutunun en sade kullanım şekli aşagıdaki gibidir. Burada alan adımızı yazdıktan sonra enter basarak komutu işletmemiz yeterlidir.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dig zafercelenk.com
+
+; &lt;&lt;&gt;&gt; DiG 9.11.5-P4-5.1+deb10u2-Debian &lt;&lt;&gt;&gt; zafercelenk.com
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER<span style="color:#a31515">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: 2258
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;zafercelenk.com.		IN	A
+
+;; ANSWER SECTION:
+zafercelenk.com.	299	IN	A	104.28.4.30
+zafercelenk.com.	299	IN	A	172.67.129.214
+zafercelenk.com.	299	IN	A	104.28.5.30
+
+;; Query time: 85 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Sun Dec 20 16:37:49 +03 2020
+;; MSG SIZE  rcvd: 92
+</code></pre></div><p>Yukarıda <strong>dig</strong> komutu ve bu komutun işletilmesi sonrası oluşan çıktıyı görüyorsunuz. Çıktıda ilk dikkat etmemiz gereken iki bölüm var. Bunlar <em>QUESTION SECTION</em> ve <em>ANSWER SECTION</em> birinci bölüm <strong>dig</strong> ile sorduğumuz soruyu, ikinci bölüm ise bu sorunun cevabını gösteriyor.</p>
+<h4 id="komut-seçenekleri">Komut Seçenekleri</h4>
+<p>Yukarıdaki örnekte <strong>dig</strong> komutunu en basit haliyle kullandık ve çıktı olarak bize alan adına ait <strong>A</strong> kaydını döndürdü. Bununla beraber <strong>dig</strong> komutu ile alan adına ait bir çok kaydı görüntüleyebileceğimiz seçenekleride vardır. Varsayılan olarak <strong>dig</strong> komutu alan adına ait <strong>A</strong> kaydını gösterir. Ancak istediğimiz bir kaydıda görüntüleyebiliriz. Örneğin <strong>SOA</strong> kaydını görüntelemek istediğimizde şu şekilde bir kullanım gerekir.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dig zafercelenk.com SOA
+
+; &lt;&lt;&gt;&gt; DiG 9.11.5-P4-5.1+deb10u2-Debian &lt;&lt;&gt;&gt; zafercelenk.com SOA
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER<span style="color:#a31515">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: 57497
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;zafercelenk.com.		IN	SOA
+
+;; ANSWER SECTION:
+zafercelenk.com.	3599	IN	SOA	anirban.ns.cloudflare.com. dns.cloudflare.com. 2034942384 10000 2400 604800 3600
+
+;; Query time: 72 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Sun Dec 20 17:32:51 +03 2020
+;; MSG SIZE  rcvd: 10
+</code></pre></div><p>Bu örnekte alan adına ait <strong>SOA</strong> kaydını sorduk ve cevabını aldık. Bunun gibi başka alan adı kayıtlarınıda **A, MX, TXT vs. ** görüntülemek mümkündür. Eğer alan adı ile ilgili tüm  kayıtları tek bir cevapta görüntülemek isterseniz <strong>ANY</strong> seçeneğini kullanabilirsiniz.</p>
+<p>Eğer bir IP adresi ile sorgulama yapmak isterseniz bunun için <strong>x</strong> seçeneğini kullanabilrsiniz. Bu sayede DNS Reverse Lookup kayıtları sorgulanabilir. Aşağıdaki örnek kullanım böyle bir sorguyu ve cevabı bize gösterir.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dig -x 172.67.129.214
+
+; &lt;&lt;&gt;&gt; DiG 9.11.5-P4-5.1+deb10u2-Debian &lt;&lt;&gt;&gt; -x 172.67.129.214
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER<span style="color:#a31515">&lt;&lt;- opco</span>de: QUERY, status: NXDOMAIN, id: 63888
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;214.129.67.172.in-addr.arpa.	IN	PTR
+
+;; AUTHORITY SECTION:
+67.172.in-addr.arpa.	1799	IN	SOA	cruz.ns.cloudflare.com. dns.cloudflare.com. 2034580120 10000 2400 604800 3600
+
+;; Query time: 73 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Sun Dec 20 17:40:42 +03 2020
+;; MSG SIZE  rcvd: 118
+</code></pre></div><p>Bir diğer kullanışlı seçenek ise <strong>dig</strong> komutunun sorguları farklı DNS sunucuları üzerinden yapabilme imkanıdır. Bu kullanım şekli DNS önbellek sorunlarını daha çabuk tespit etmemize yardımcı olabilir. Aşağıda örnek bir kullanımı görebilirsiniz.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dig @208.67.222.222 zafercelenk.com
+
+; &lt;&lt;&gt;&gt; DiG 9.11.5-P4-5.1+deb10u2-Debian &lt;&lt;&gt;&gt; @208.67.222.222 zafercelenk.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER<span style="color:#a31515">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: 6645
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;zafercelenk.com.		IN	A
+
+;; ANSWER SECTION:
+zafercelenk.com.	300	IN	A	172.67.129.214
+zafercelenk.com.	300	IN	A	104.28.4.30
+zafercelenk.com.	300	IN	A	104.28.5.30
+
+;; Query time: 671 msec
+;; SERVER: 208.67.222.222#53(208.67.222.222)
+;; WHEN: Sun Dec 20 17:50:23 +03 2020
+;; MSG SIZE  rcvd: 92
+</code></pre></div><p>Bu örnekte sorgulama yapılacak sunucu <strong>dig</strong> komutuna bizim tarafımızdan bildirilmiştir. Çıktıdaki en son bölüme dikkat ederseniz sorgu yapılan sunucu bilgisi <strong>SERVER</strong> satırında gösterilmiştir. Peki önceki sorgularda bir sunucu bilgisi vermediğimiz halde <strong>dig</strong> komutu nereden sorgu yapacağını nasıl biliyor? Çünkü <strong>dig</strong> komutu varsayılan olarak sisteminizdeki <strong>/etc/resolve.conf</strong> dosyasında tanımlı bilgileri kullanarak bu sorguları yapmak için ayarlanmıştır. Siz özel bir bildirim yapmadığınız sürece <strong>dig</strong> bu dosyayı kullanarak işlemeleri gerçekleştirir.</p>
+<h4 id="sorgu-seçenekleri">Sorgu Seçenekleri</h4>
+<p>Komut seçenekleri yanında <strong>dig</strong> sorgu çıktımızı şekillendirmek içinde bazı seçenekler sunar. Bunlar;</p>
+<ul>
+<li><strong>+nocomments :</strong> Cevap ile alakalı üst bilgileri kapatır.</li>
+<li><strong>+noauthority :</strong> Cevap ile alakalı yetki alanları kapatır.</li>
+<li><strong>+noadditional :</strong> Cevap ile alakalı ek bölümleri kapatır.</li>
+<li><strong>+nostats :</strong> Cevap ile alakalı ek istatistikleri kapatır.</li>
+</ul>
+<p>Aşağıdaki örnekte <strong>+nocomments</strong> seçeneğinin aktif edildiği bir sorgu örneğini görebilirsiniz.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dig zafercelen.com +nocomments
+
+; &lt;&lt;&gt;&gt; DiG 9.11.5-P4-5.1+deb10u2-Debian &lt;&lt;&gt;&gt; zafercelen.com +nocomments
+;; global options: +cmd
+;zafercelen.com.			IN	A
+com.			899	IN	SOA	a.gtld-servers.net. nstld.verisign-grs.com. 1608476452 1800 900 604800 86400
+;; Query time: 58 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Sun Dec 20 18:01:17 +03 2020
+;; MSG SIZE  rcvd: 116
+</code></pre></div><p>Bu seçenekten dolayı çıktıda sadece cevap ve bilgi bölümleri gösterilmektedir. Bu şekilde çıktınızı formatlamak için daha bir çok seçeneği kullanabilrsiniz.</p>
+<p>Bunlar dışında <strong>dig</strong> komutunun diğer tüm seçenekleri görmek için terminal üzerinde <strong>man dig</strong> yazarak manuel sayfasına ulaşabilir veya web üzerinden <a href="https://linux.die.net/man/1/dig">https://linux.die.net/man/1/dig</a> adresini ziyaret edebilirsiniz.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="tags">
+							
+							<li><a href="/tags/dig">dig</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2021  © www.zafercelenk.com, Tüm hakları saklıdır |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-127825254-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>map on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/map/</link>
+    <description>Recent content in map on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Sat, 16 Feb 2019 23:00:00 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/map/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go dilinde eşleme tabloları</title>
+      <link>https://www.zafercelenk.com/posts/go-dilinde-esleme-tablolari/</link>
+      <pubDate>Sat, 16 Feb 2019 23:00:00 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/go-dilinde-esleme-tablolari/</guid>
+      <description>Go dilinde diğer pek çok dilde olduğu gibi eşleme tablosu diye adlandırabileceğimiz map veri tipi vardır. Yazılım dillerinde bulunan genel veri yapılarından birisi dizilerdir. Diziler aynı türde bir çok veriyi bir arada ve sıralı bir şekilde yönetebilmemizi sağlayan bir topluluk veri tipidir. Go dilindeki map olanağı ise dizinin tamsayı indis kısıtlamasını kaldırarak daha esnek yapılar oluşturmamızı sağlar.
+Bununla birlikte dizi indisleri ancak bir tamsayı olabilmektedir. Örneğin haftanın günlerini bir dizi ile temsil etmek güzel bir çözümdür.</description>
+    </item>
+    
+  </channel>
+</rss>

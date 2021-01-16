@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ekran on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/ekran/</link>
+    <description>Recent content in ekran on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Sat, 20 Oct 2018 10:47:36 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/ekran/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux çoklu masaüstü kullanımı</title>
+      <link>https://www.zafercelenk.com/posts/linux-coklu-masaustu-kullanimi/</link>
+      <pubDate>Sat, 20 Oct 2018 10:47:36 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/linux-coklu-masaustu-kullanimi/</guid>
+      <description>Linux işletim sistemi kullanıyor musunuz? Peki daha önce Linux veya OS X işletim sistemleri ile bir deneyiminiz oldu mu? Eğer bu sorulara evet diyorsanız o zaman çoklu masaüstü ile tanışmış olmalısınız. Son sürümle beraber Windows 10 işletim sistemi de bu beceriye kavuşmuştur. Ben bu yazımda bir Linux kullanıcısı olarak, çoklu masaüstünün Linux tarafındaki kullanımından söz edeceğim.
+Linux masaüstü ortamları ilk ortaya çıktığı günden bu yana çoklu masaüstü özelliğini kullanıcılarına sunmaktadır. Linux ortamında mevcut masaüstünüzün birden çok kopyasını oluşturabilirsiniz.</description>
+    </item>
+    
+  </channel>
+</rss>

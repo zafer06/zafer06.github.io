@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>degisken on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/degisken/</link>
+    <description>Recent content in degisken on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Mon, 05 Nov 2018 21:50:42 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/degisken/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go dilinde değişken ve veri türleri</title>
+      <link>https://www.zafercelenk.com/posts/go-degisken-veri-turleri/</link>
+      <pubDate>Mon, 05 Nov 2018 21:50:42 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/go-degisken-veri-turleri/</guid>
+      <description>&lt;p&gt;Veri türleri programlama dilinin en temel olanaklarıdır. Biz programcılar uygulamalarımızı geliştirirken sürekli olarak veri ile iç içe çalışırız. Ancak veri tek başına anlamlı değildir. Ancak yanında onu niteleyen bir özellikle anlamlı hale gelir. Bu süreçte verinin bilgisayar tarafından doğru anlamlandırılmasını sağlamak içinde veri türlerini kullanırız.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

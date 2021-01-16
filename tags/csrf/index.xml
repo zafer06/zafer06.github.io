@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>csrf on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/csrf/</link>
+    <description>Recent content in csrf on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Sat, 09 May 2020 18:00:58 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/csrf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beego ve Cross Site Request Forgery (CSRF)</title>
+      <link>https://www.zafercelenk.com/posts/csrf-guvenlik/</link>
+      <pubDate>Sat, 09 May 2020 18:00:58 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/csrf-guvenlik/</guid>
+      <description>Cross Site Request Forgery kısaca CSRF türkçeye &amp;ldquo;Siteler Arası İstek Sahtekârlığı&amp;rdquo; şeklinde çevrilebilir. CSRF web geliştiricilerinin sürekli karşı karşıya kaldıkları bir durumdur. Web uygulamasının görevi kendisine gelen isteklere belirli kurallar çerçevesinde cevap vermektir. Burada sorun şudur ki; web uygulaması kendisine gelen isteğin esas sahibinin kim olduğunu bilmez. Örneğin http://www.zafercelenk.com adresinde bulunan bir iletişim formu üzerinden mesaj gönderdiğimizi düşünelim. Bu form bilgilerini gerçekten bu adresi açmış olan bir tarayıcı üzerinden gönderebileceğimiz gibi kendi yazdığımız bir uygulama üzerindende gönderebiliriz.</description>
+    </item>
+    
+  </channel>
+</rss>

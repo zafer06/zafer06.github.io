@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dig on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/dig/</link>
+    <description>Recent content in dig on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Sun, 20 Dec 2020 18:08:04 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/dig/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash Komutlari: dig</title>
+      <link>https://www.zafercelenk.com/posts/bash-komutlari-dig/</link>
+      <pubDate>Sun, 20 Dec 2020 18:08:04 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/bash-komutlari-dig/</guid>
+      <description>Linux üzerinde çalışıyorsanız Linux&amp;rsquo;un beraberinde getirdiği bir çok faydalı terminal komutu ile işlerinizi daha hızlı ve pratik bir şekilde halletmeniz mümkün. Bu güzel komutlardan biriside dig komutudur.
+Bir terminal komutu olan dig ile alan adları üzerinde bazı sorgular yaparak bilgiler edinebilirsiniz. Pek tabi ki bu iş için bir çok araç ve web sitesindende yardım alabilirsiniz. Ancak Linux terminalde yerleşik olarak gelen dig komutu çok daha pratik ve hızlı bir şekilde sorunuzu çözmenize yardım edebilir.</description>
+    </item>
+    
+  </channel>
+</rss>

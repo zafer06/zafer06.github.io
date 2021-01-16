@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssl on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/ssl/</link>
+    <description>Recent content in ssl on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Fri, 28 Dec 2018 22:55:58 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tek IP Üzerinden SSL Kullanımı</title>
+      <link>https://www.zafercelenk.com/posts/tek-ip-uzerinden-ssl-kullanimi/</link>
+      <pubDate>Fri, 28 Dec 2018 22:55:58 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/tek-ip-uzerinden-ssl-kullanimi/</guid>
+      <description>&lt;p&gt;SSL (Secure Socket Layer) teknolojisi sayesinde sunucu ile istemci arasında düz metin olarak gidip gelen veri şifrelenerek güvenli bir şekilde aktarılmaya başladı.&lt;/p&gt;
+&lt;p&gt;Bugün kullandığımız internet sitelerinin dolayısıyla www&amp;rsquo;nin temelinde iki önemli unsur bulunur. Bunlardan birincisi içeriği sağlayan sunucu bir diğeri ile içeriği talep eden istemci. Tüm web sistemi bu iki olgu üzerine kurulmuştur.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

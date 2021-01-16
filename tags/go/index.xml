@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/go/</link>
+    <description>Recent content in go on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Sat, 16 Feb 2019 23:00:00 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go dilinde eşleme tabloları</title>
+      <link>https://www.zafercelenk.com/posts/go-dilinde-esleme-tablolari/</link>
+      <pubDate>Sat, 16 Feb 2019 23:00:00 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/go-dilinde-esleme-tablolari/</guid>
+      <description>Go dilinde diğer pek çok dilde olduğu gibi eşleme tablosu diye adlandırabileceğimiz map veri tipi vardır. Yazılım dillerinde bulunan genel veri yapılarından birisi dizilerdir. Diziler aynı türde bir çok veriyi bir arada ve sıralı bir şekilde yönetebilmemizi sağlayan bir topluluk veri tipidir. Go dilindeki map olanağı ise dizinin tamsayı indis kısıtlamasını kaldırarak daha esnek yapılar oluşturmamızı sağlar.
+Bununla birlikte dizi indisleri ancak bir tamsayı olabilmektedir. Örneğin haftanın günlerini bir dizi ile temsil etmek güzel bir çözümdür.</description>
+    </item>
+    
+    <item>
+      <title>Go dilinde değişken ve veri türleri</title>
+      <link>https://www.zafercelenk.com/posts/go-degisken-veri-turleri/</link>
+      <pubDate>Mon, 05 Nov 2018 21:50:42 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/go-degisken-veri-turleri/</guid>
+      <description>&lt;p&gt;Veri türleri programlama dilinin en temel olanaklarıdır. Biz programcılar uygulamalarımızı geliştirirken sürekli olarak veri ile iç içe çalışırız. Ancak veri tek başına anlamlı değildir. Ancak yanında onu niteleyen bir özellikle anlamlı hale gelir. Bu süreçte verinin bilgisayar tarafından doğru anlamlandırılmasını sağlamak içinde veri türlerini kullanırız.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

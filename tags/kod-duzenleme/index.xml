@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kod-duzenleme on Zafer Günlükleri</title>
+    <link>https://www.zafercelenk.com/tags/kod-duzenleme/</link>
+    <description>Recent content in kod-duzenleme on Zafer Günlükleri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>© www.zafercelenk.com, Tüm hakları saklıdır</copyright>
+    <lastBuildDate>Sat, 02 Feb 2019 20:21:47 +0300</lastBuildDate><atom:link href="https://www.zafercelenk.com/tags/kod-duzenleme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Refactoring Nedir?</title>
+      <link>https://www.zafercelenk.com/posts/refactoring-nedir/</link>
+      <pubDate>Sat, 02 Feb 2019 20:21:47 +0300</pubDate>
+      
+      <guid>https://www.zafercelenk.com/posts/refactoring-nedir/</guid>
+      <description>&lt;p&gt;Yazılım geliştiriciler olarak bazen eski yazdığımız kodlara bakarak bunları daha iyi yazabileceğimizi görürürüz. Bazen ise başka geliştiricilerin yazdıkları kodları inceler ve bu kodların daha iyi yazılabileceğini düşünürüz. Yazılan bu kodlar o an için en iyi çözüm gibi görünse de sonrasında daha iyi çözümler olduğunu görürüz. Böyle durumlarda eski kodu daha iyi hale getirmek için yapılan yeniden düzenleme işlemine refactoring denir.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

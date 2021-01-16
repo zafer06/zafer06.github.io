@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Refactoring Nedir? - Zafer Günlükleri</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Refactoring Nedir?">
+<meta itemprop="description" content="Yazılım geliştiriciler olarak bazen eski yazdığımız kodlara bakarak bunları daha iyi yazabileceğimizi görürürüz. Bazen ise başka geliştiricilerin yazdıkları kodları inceler ve bu kodların daha iyi yazılabileceğini düşünürüz. Yazılan bu kodlar o an için en iyi çözüm gibi görünse de sonrasında daha iyi çözümler olduğunu görürüz. Böyle durumlarda eski kodu daha iyi hale getirmek için yapılan yeniden düzenleme işlemine refactoring denir.">
+<meta itemprop="datePublished" content="2019-02-02T20:21:47+03:00" />
+<meta itemprop="dateModified" content="2019-02-02T20:21:47+03:00" />
+<meta itemprop="wordCount" content="404">
+
+
+
+<meta itemprop="keywords" content="refactoring,kod-duzenleme," />
+<meta property="og:title" content="Refactoring Nedir?" />
+<meta property="og:description" content="Yazılım geliştiriciler olarak bazen eski yazdığımız kodlara bakarak bunları daha iyi yazabileceğimizi görürürüz. Bazen ise başka geliştiricilerin yazdıkları kodları inceler ve bu kodların daha iyi yazılabileceğini düşünürüz. Yazılan bu kodlar o an için en iyi çözüm gibi görünse de sonrasında daha iyi çözümler olduğunu görürüz. Böyle durumlarda eski kodu daha iyi hale getirmek için yapılan yeniden düzenleme işlemine refactoring denir." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.zafercelenk.com/posts/refactoring-nedir/" />
+<meta property="article:published_time" content="2019-02-02T20:21:47+03:00" />
+<meta property="article:modified_time" content="2019-02-02T20:21:47+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Refactoring Nedir?"/>
+<meta name="twitter:description" content="Yazılım geliştiriciler olarak bazen eski yazdığımız kodlara bakarak bunları daha iyi yazabileceğimizi görürürüz. Bazen ise başka geliştiricilerin yazdıkları kodları inceler ve bu kodların daha iyi yazılabileceğini düşünürüz. Yazılan bu kodlar o an için en iyi çözüm gibi görünse de sonrasında daha iyi çözümler olduğunu görürüz. Böyle durumlarda eski kodu daha iyi hale getirmek için yapılan yeniden düzenleme işlemine refactoring denir."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.zafercelenk.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.zafercelenk.com/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://www.zafercelenk.com/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://www.zafercelenk.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://www.zafercelenk.com/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="Zafer Günlükleri" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://www.zafercelenk.com/">Zafer Günlükleri</a></h1>
+	<div class="site-description"><p style="color: gray">Bir programcının hayat ve yazılım üzerine notları</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/zafer06" title="Github"><i data-feather="github"></i></a></li><li><a href="https://www.linkedin.com/in/zafer-celenk" title="Linkedin"><i data-feather="linkedin"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav><span class="scheme-toggle"><a href="#" id="scheme-toggle"></a></div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Blog</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Tüm Yazılar</a>
+			</li>
+			
+			<li>
+				<a href="/about">Hakkımda</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Etiketler</a>
+			</li>
+			
+			<li style="float:right;margin:0">
+				<a href="/abakus">Abaküs</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">02</span>
+							<span class="rest">Şub 2019</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Refactoring Nedir?</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Yazılım geliştiriciler olarak bazen eski yazdığımız kodlara bakarak bunları daha iyi yazabileceğimizi görürürüz. Bazen ise başka geliştiricilerin yazdıkları kodları inceler ve bu kodların daha iyi yazılabileceğini düşünürüz. Yazılan bu kodlar o an için en iyi çözüm gibi görünse de sonrasında daha iyi çözümler olduğunu görürüz. Böyle durumlarda eski kodu daha iyi hale getirmek için yapılan yeniden düzenleme işlemine refactoring denir.</p>
+<p>Yazılım tek seferlik bir üretim değildir. Bunun aksine yazılım bir süreçtir. Örneğin linux kaynak kodunu gözünüzün önüne getirin. 1991 yılında ilk sürümü ortaya çıkan linux kaynak koduna yıllardır bir çok kod parçası eklendi. Pek tabi ki bu kodlar her zaman mükemmel değildi. Fakat linux bu süreç boyunca yapılan refactoring işlemleri sayesinde kötü veya gereksiz kodlar düzenlenerek çok daha kaliteli bir kod yapısına kavuştu. Bu basit örnekten de göreceğimiz üzere ilk defasında mükemeli yapmak mümkün değil. Ancak süreç boyunca yapılan düzenlemelerle en iyiye ulaşmak mümkün. Refactoring işleminin temelinde yatan fikirde aslında bundan ibaret.</p>
+<p>Peki ne zaman refactoring yapmalıyım? Refactoring için bir zaman yok. Kodunuzda daha iyi hale getirebileceğiniz bölümler gördüğünüzde hemen kod düzeltmesi uygulayabilirsiniz. Sonuçta önemli olan kodunuzun bir önceki halinden daha iyi hale gelmesi. Refactoring işlemini kodunuzda gördüğünüz eksikleri gidermek adına yapabileceğiniz gibi bu konuda öne çıkar önerileri içeren refactoring tekniklerinide takip edebilirsiniz. Bu teknikler yazılımcıların genel olarak yaptıkları hatalardan yola çıkarak hazınlanmış bir rehber niteliğindedir.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#00f">func</span> printOwing(amount <span style="color:#2b91af">float64</span>) {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    printBanner()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>    <span style="color:#008000">//print details
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#008000"></span>    fmt.Println(<span style="color:#a31515">&#34;name:&#34;</span> + name)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>    fmt.Println (<span style="color:#a31515">&#34;amount&#34;</span> + amount)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>}
+</code></pre></div>
+<p>Yukarıdaki kod blogunda görünen sorun &ldquo;<em>print details</em>&rdquo; bölümünden kaynaklanıyor. Bu bölüm yeni bir fonksiyon içine taşınarak mevcut fonksiyonun karmaşıklığı azaltılabilir. Ayrıca başka yerlerde kullanmak gerektiğinde oluşturduğumuz yeni fonksiyonu çağırıp kullanmak çok daha pratik ve kullanışlı olur. Bu düşünce ile kodumuzu düzenlediğimizde ortaya şöyle bir kod parçası çıkacaktır.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#00f">func</span> printOwing(amount <span style="color:#2b91af">float64</span>) {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>    printBanner()
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>    printDetails(amount)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#00f">func</span> printDetails(amount <span style="color:#2b91af">float64</span>) {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span>     fmt.Println(<span style="color:#a31515">&#34;name:&#34;</span> + name)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span>     fmt.Println(<span style="color:#a31515">&#34;amount&#34;</span> + amount)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span>}
+</code></pre></div>
+<p>Kod blogumuz yeni hali ile çok daha okunaklı ve temiz görünüyor. Ayrıca yeni oluşturduğumuz fonksiyonu bir çok farklı noktadan çağırıp kullanmak artık oldukça kolaylaştı. Bu ve bunun gibi bir çok durum böyle basit kodlarda net bir şekilde görünmektedir. Oysa çok fazla kod içeren büyük projelerde bu tür bir çok basit çözüm gözden kaçmakta ve diğer kod blokların içinde kaybolmaktadır. İşte bunun çözümü refactoring işlemidir.</p>
+<p>Bu yazımda kısaca refactoring işlemini anlatmaya çalıştım. Eğer bu konu ilginizi çektiyse mutlaka refactoring teknikleri konusunu internetten araştırın. Ayrıca bu konuda <em>Ali Rıza Adiyahşi</em> tarafından hazırlanan <a href="https://github.com/alirizaadiyahsi/refactoring-guide-in-turkish">Refactoring Guide in Turkish</a>  çalışmasını incelemenizi şiddetle tavsiye ediyorum.</p>
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="tags">
+							
+							<li><a href="/tags/refactoring">refactoring</a></li>
+							
+							<li><a href="/tags/kod-duzenleme">kod-duzenleme</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2021  © www.zafercelenk.com, Tüm hakları saklıdır |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-127825254-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
