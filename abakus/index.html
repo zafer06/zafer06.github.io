@@ -74,9 +74,9 @@
                                                 <div class="mb-3">
                                                     <label for="expiry" class="form-label">Stopaj Oranı</label>
                                                     <select class="form-select" x-model="formData.tax" tabindex="4">
-                                                        <option value="5">%5</option>
+                                                        <option value="15" selected>%15</option>
                                                         <option value="10">%10</option>
-                                                        <option value="15">%15</option>
+                                                        <option value="5">%5</option>
                                                     </select>
                                                 </div>
                                                 <div class="mb-3">
@@ -132,8 +132,49 @@
                     </div>
                 </div>
             </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        Görüş, öneri ve şikayet bildir
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
+
+
+    <!-- Email Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emailModalLabel">Mesaj Gönderin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Eposta adresiniz (iletişim için)</label>
+                                    <input type="email" class="form-control" id="email" placeholder="isim@ornek.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mesajınız</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary" onClick="sendMessage()">Mesajı Gönder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

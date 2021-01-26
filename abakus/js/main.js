@@ -4,10 +4,10 @@ document.title = "Abaküs - Finansal Hesap Makinası | v" + appVersion;
 function depositModule() {
     return {
         formData: {
-            amount: 0,
+            amount: "0",
+            rate: "0",
             expiry: 0,
-            rate: 0,
-            tax: 0
+            tax: 15
         },
         resultData: {
             amount: "0,00",
@@ -21,24 +21,27 @@ function depositModule() {
         },
 
         calculate() {
-            let grossAmount = (this.formData.amount / 100) * (this.formData.rate / 365) * this.formData.expiry;
+            let amount = Number(this.formData.amount.replace(",", "."));
+            let rate = Number(this.formData.rate.replace(",", "."));
+
+            let grossAmount = (amount / 100) * (rate / 365) * this.formData.expiry;
             let tax = (grossAmount * this.formData.tax) / 100;
             let netAmount = grossAmount - tax;
             let today = new Date();
             let endDate = addDays(Number(this.formData.expiry));
 
-            this.resultData.amount = formatNumber(this.formData.amount);
+            this.resultData.amount = formatNumber(amount);
             this.resultData.grossAmount = formatNumber(grossAmount);
             this.resultData.tax = formatNumber(tax);
             this.resultData.netAmount = formatNumber(netAmount);
-            this.resultData.grandTotal = formatNumber(Number(this.formData.amount) + netAmount);
+            this.resultData.grandTotal = formatNumber(amount + netAmount);
             this.resultData.beginDate = formatDate(today);
             this.resultData.endDate = formatDate(endDate);
             this.resultData.diffDays = diffDays(today, endDate)
 
             console.log("diff days: ", diffDays(today, endDate));
 
-           // sendEmail();
+            // sendEmail();
         }
     }
 }
@@ -69,6 +72,7 @@ function formatNumber(number) {
     let formatter = new Intl.NumberFormat('tr-TR', {
         style: 'decimal',
         currency: 'TRY',
+        minimumFractionDigits: 2,
         maximumFractionDigits: 2,
         // These options are needed to round to whole numbers if that's what you want.
         //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
@@ -78,19 +82,25 @@ function formatNumber(number) {
     return formatter.format(number);
 }
 
-function sendEmail() {
-    // 6062a736-9f61-44d5-9a2f-a18bbb8b1201
+function sendMessage() {
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+
     Email.send({
         //SecureToken: "6062a736-9f61-44d5-9a2f-a18bbb8b1201",
-        SecureToken:"eea73541-8e5b-478d-bffb-6184d8cadbd2",
+        SecureToken: "eea73541-8e5b-478d-bffb-6184d8cadbd2",
         To: 'zafercelenk@gmail.com',
         From: "zafercelenk@gmail.com",
         Subject: "Abakus uygulamasindan mesaj var",
-        Body: "And this is the body"
+        Body: message +"<br><br>"+ email
     }).then(
         message => {
-            console.log(message);
-            alert(message)
+            if (message == "OK") {
+                alert("Mesajınız iletilmiştir. Teşekkür ederiz.")
+            } else {
+                alert("Hatalar oluştu. Lütfen daha sonra tekrar deneyin");
+                console.log(message);
+            }
         }
     );
 }
