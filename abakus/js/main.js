@@ -83,8 +83,8 @@ function formatNumber(number) {
 }
 
 function sendMessage() {
-    let email = document.getElementById("email");
-    let message = document.getElementById("message");
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
 
     Email.send({
         //SecureToken: "6062a736-9f61-44d5-9a2f-a18bbb8b1201",
